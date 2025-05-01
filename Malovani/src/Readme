@@ -1,0 +1,68 @@
+Popis
+Aplikace pro kreslení na plátno s různými režimy kreslení (pero, guma, tvary), podporující kreslení perem, obdélníky, čtverce, kruhy a polygony s možností volby barvy, tloušťky a stylu čáry.
+
+Hlavní Funkce
+Režimy kreslení:
+
+Pero
+
+Guma
+
+Linie, obdélník, čtverec, kruh, polygon
+
+Úpravy:
+
+Změna barvy, tloušťky čáry, stylu (plná, přerušovaná, tečkovaná)
+
+Vymazání plátna
+
+UI:
+
+Tlačítka pro přepínání režimů a nástrojů
+
+Vyskakovací menu pro výběr tvarů a barev
+
+Tlačítka:
+
+Vymazání celého plátna
+
+Výběr režimu (pero, guma, tvary)
+
+Nastavení barvy, tloušťky a stylu čáry
+
+Struktura Kódu
+Main (Hlavní třída):
+
+Spravuje kreslení a interakce s uživatelem (myš)
+
+Různé režimy kreslení a nástroje
+
+Aktualizace plátna při interakci (dragging, kliknutí)
+
+Technické Detaily
+Kreslení:
+
+Bresenhamův algoritmus pro vykreslování úseček.
+
+Různé tvary (obdélníky, kruhy, polygony) vykreslené pomocí základních grafických operací.
+
+Plátno:
+
+Používá BufferedImage pro kreslení pixel po pixelu.
+
+Podporuje různé režimy (pero, guma, tvary).
+
+UI komponenty:
+
+JButton pro ovládání režimů, barvy a tloušťky.
+
+JPopupMenu pro pokročilé výběry (tvary, barvy).
+
+Klíčové Třídy a Metody
+paintComponent: Vykresluje obsah plátna a náhled tvaru.
+
+drawLineRaster: Vykreslení čáry.
+
+clearCanvas: Vymazání plátna.
+
+toggleEraser: Přepnutí režimu gum
